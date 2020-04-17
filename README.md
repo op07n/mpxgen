@@ -1,3 +1,5 @@
+Duplicate of https://github.com/Anthony96922/mpxgen
+
 # mpxgen
 Based on [PiFmAdv](https://github.com/miegl/PiFmAdv) which is based on [PiFmRds](https://github.com/ChristopheJacquet/PiFmRds)
 
