@@ -11,16 +11,15 @@ jobs:
       MSYS2_ARCH: i686
     steps:
     - uses: actions/checkout@v1
-    - uses: numworks/setup-msys2@v1
+    - uses: eine/setup-msys2@v0      
       with:
         update: true
         msystem: MINGW32
-        
+                
     - name: Install MSYS2 Dependencies
       run:  msys2do pacman --noconfirm -S --needed mingw-w64-i686-gcc mingw-w64-i686-libao mingw-w64-i686-libsndfile mingw-w64-i686-libsamplerate mingw-w64-i686-crt make
     - name: make
-      run:  msys2do 'cd src && make -f Makefile -j'
-
+      run:  msys2do ./run.sh
        
     - uses: actions/upload-artifact@v1
       with:
